@@ -9,6 +9,7 @@ mongoose.connect("mongodb://localhost:27017/test").then(() => {
     console.log('something went wrong in data base')
 })
 
+// Kyu gand marva rha h bhai kaam kr lene de
 app.set("view engine", "ejs")
 
 app.use(express.json())
