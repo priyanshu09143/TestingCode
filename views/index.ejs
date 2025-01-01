@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Ejs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="center">Hello world</h1>
+    </div>
+    <div class="data">
+        <% data.data.products.forEach((data) => { %>
+          <div class="products">
+            <img src="<%= data.images[0] %>" alt="">
+            <h1> title : <%= data.title %></h1>
+            <p> price : <%= data.price %></p>
+            <p> description : <%= data.description %></p>
+            <p> category : <%= data.category %></p>
+            <p>discountPercentage : <%= data.discountPercentage %></p>
+            <p>stock : <%= data.stock %></p>
+            <p>weight : <%= data.weight %></p>
+            <p>minimumOrderQuantity :<%= data.minimumOrderQuantity %></p>
+            <p> warrantyInformation :<%= data.warrantyInformation %></p>
+          </div>
+        <% }); %>
+    </div>
+</body>
+
+</html>
